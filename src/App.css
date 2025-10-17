@@ -1,0 +1,199 @@
+.heading-section{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.content-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(250, 202, 9, 0.05);
+  border: 1px solid rgba(250, 202, 9, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(250, 202, 9, 0.2);
+  border-color: rgba(250, 202, 9, 0.4);
+}
+
+.card-content {
+  flex-grow: 1;
+  padding: 1.5rem;
+  background: transparent;
+}
+
+.card .media {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card .media-left .image {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid rgba(250, 202, 9, 0.3);
+}
+
+.card .media-left .image img {
+  border-radius: 6px;
+}
+
+.card .title {
+  color: #faca09;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card .subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.card .tag {
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+}
+
+.card .tag.is-primary {
+  background-color: #faca09;
+  color: #000;
+}
+
+.card .tag.is-info {
+  background-color: rgba(250, 202, 9, 0.2);
+  color: #faca09;
+  border: 1px solid rgba(250, 202, 9, 0.5);
+}
+
+.card .content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card-footer {
+  margin-top: auto;
+  background: rgba(250, 202, 9, 0.05);
+  border-top: 1px solid rgba(250, 202, 9, 0.1);
+  padding: 0;
+}
+
+.card-footer .button {
+  background: linear-gradient(135deg, #faca09, #e6b608);
+  color: #000;
+  border: none;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.card-footer .button:hover {
+  background: linear-gradient(135deg, #e6b608, #d4a307);
+  transform: none;
+}
+
+.card-footer .button .icon {
+  margin-right: 0.5rem;
+}
+
+/* Hero section styling */
+.hero.is-fullheight {
+  background: linear-gradient(135deg, #000 0%, #1a1a1a 50%, #000 100%);
+  min-height: 100vh;
+}
+
+.hero-body {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.connector-image{
+  background-color: #fff;
+}
+
+/* Filter Section Styling */
+.filter-section {
+  margin-bottom: 2rem;
+}
+
+.has-text-yellow {
+  color: #faca09 !important;
+}
+
+.filter-btn {
+  background: rgba(250, 202, 9, 0.1);
+  border: 1px solid rgba(250, 202, 9, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background: rgba(250, 202, 9, 0.2);
+  border-color: rgba(250, 202, 9, 0.5);
+  color: #faca09;
+  transform: translateY(-2px);
+}
+
+.filter-btn.is-active {
+  background: linear-gradient(135deg, #faca09, #e6b608);
+  border-color: #faca09;
+  color: #000;
+  font-weight: 600;
+}
+
+.filter-btn.is-active:hover {
+  background: linear-gradient(135deg, #e6b608, #d4a307);
+  transform: translateY(-2px);
+}
+
+.filter-btn .tag {
+  background: rgba(0, 0, 0, 0.2);
+  color: inherit;
+  border: none;
+  font-size: 0.75rem;
+}
+
+.filter-btn.is-active .tag {
+  background: rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-section {
+    padding: 0 0.5rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .heading-section {
+    margin-bottom: 2rem;
+  }
+  
+  .hero-body {
+    padding: 1rem 0.5rem;
+  }
+}
