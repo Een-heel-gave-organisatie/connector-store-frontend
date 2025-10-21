@@ -32,7 +32,7 @@ export const connectors = [
     {
         name: "Tax Utilities",
         downloadUrl:
-            "https://github.com/Een-heel-gave-organisatie/tax-utilities/releases/download/v2.0.3/tax-connector-2.0.2-SNAPSHOT.zip",
+            "https://github.com/Een-heel-gave-organisatie/tax-utilities/releases/download/v2.0.4/tax-connector-2.0.2-SNAPSHOT.zip",
         description: "Tax Utilities provides tax-related tools and resources.",
         imageUrl: taxUtilityIcon,
         type: "utility",
